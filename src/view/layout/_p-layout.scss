@@ -1,0 +1,85 @@
+.p-layout-navbar {
+    height: 80px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.p-layout-fixed {
+    height: calc(100vh - 80px);
+    background: $dark-bg;
+    .ant-layout {
+        height: 100%;
+    }
+    @media (min-width: 992px) {
+        .menu {
+            display: none;
+        }
+        .p-drawer-layout {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .ant-layout-sider {
+            display: none !important;
+        }
+        .p-drawer-layout {
+            display: flex;
+        }
+        
+    }
+    
+    .p-drawer-layout {
+            position: absolute;
+            bottom: 32px;
+            left: 16px;
+            display: flex;
+            z-index: 6;
+        .p-trigger-layout {
+                display: flex;
+                background: $primary;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                cursor: pointer;
+        }
+    }
+}
+
+.p-sidebar-layout {
+    height: 100%;
+}
+
+.ant-drawer-body, .ant-drawer-header {
+    background-color: $background;
+}
+
+.ant-drawer-title,.ant-drawer-close {
+    color: $text;
+    &:hover {
+        color: $primary;
+    }
+}
+
+
+  .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+      color: rgba(255, 255, 255, 0.65);
+      background: transparent;
+  }
+  .ant-menu-submenu-title {
+    font: $menu-header;
+    color: $primary;
+    padding-left: 0 !important;
+    .ant-menu-submenu-arrow {
+      color: $primary;
+      opacity: 1;
+    }
+    &:hover {
+      color: $primary;
+    }
+  }

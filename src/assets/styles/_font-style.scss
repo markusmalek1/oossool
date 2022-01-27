@@ -1,0 +1,59 @@
+// font styles
+
+.p-logo {
+    font: $logo-text;
+    color: $primary;
+}
+
+.p-title {
+    font: $title;
+    color: $text;
+}
+
+.p-menu-header {
+    font: $menu-header;
+    color: $primary;
+}
+
+.p-menu-item {
+    font: $menu-item;
+    color: $text;
+}
+
+.p-input {
+    font: $input-text;
+    color: $text;
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font: $placeholder-text;
+        color: $placeholder;
+        opacity: 1; /* Firefox */
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font: $placeholder-text;
+        color: $placeholder;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        font: $placeholder-text;
+        color: $placeholder;
+    }
+}
+
+.p-input-placeholder {
+    font: $placeholder-text;
+    color: $placeholder;
+}
+
+.p-btn-text {
+    font: $btn;
+    color: $btn-text;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    margin: 0;
+}
+
+.p-section {
+    font: $section-text;
+    color: $placeholder;
+    margin-bottom: 32px;
+}

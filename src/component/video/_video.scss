@@ -1,0 +1,61 @@
+.react-thumbnail-generator {
+        height: 100%;
+        width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.p-video {
+    position: relative;
+    width: 310px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .p-video-overlay {
+        background: $overlay;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+        border-radius: 8px;
+    }
+    .p-play-icon {
+        position: absolute;
+        z-index: 6;
+        opacity: 0.6;
+    }
+    .p-fav-icon {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        z-index: 6;
+        svg {
+            fill: $primary;
+        }
+    }
+}
+
+.p-video-modal {
+    width: 100vw !important;
+    .ant-modal-content {
+        background-color: transparent;
+        .ant-modal-body {
+            display: flex;
+            justify-content: center
+        }
+        .ant-modal-close {
+            color: #fff;
+        }
+    }
+}
+
+.p-video-container {
+    width: 60%;
+    height: auto;
+}

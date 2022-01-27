@@ -1,0 +1,46 @@
+.p-image {
+    width: 310px;
+    height: 180px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    .p-fav-icon {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        z-index: 6;
+        svg {
+            fill: $primary;
+        }
+    }
+    .p-image-overlay {
+        background-color: $overlay;
+        position: absolute;
+        z-index: 5;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: inherit;
+    }
+    &:hover {
+        .ant-image-mask {
+            .ant-image-mask-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.ant-image-mask {
+    background-color: $overlay;
+    opacity: 1;
+    .ant-image-mask-info {
+        display: none;
+    }
+}

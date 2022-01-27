@@ -1,0 +1,137 @@
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.p-sider-layout {
+    min-height: calc(100vh - 80px);
+}
+
+
+
+.ant-layout-sider {
+  position: relative;
+  background: $background !important;    
+    padding: 32px;
+    border-top-right-radius: 8px;
+  .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+      color: rgba(255, 255, 255, 0.65);
+      background: transparent;
+  }
+  .ant-menu-submenu-title {
+    font: $menu-header;
+    color: $primary;
+    padding-left: 0 !important;
+    .ant-menu-submenu-arrow {
+      color: $primary;
+      opacity: 1;
+    }
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .ant-menu li {
+    padding-left: 16px !important;
+  }
+}
+
+.ant-menu-dark .ant-menu-item:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-item-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-submenu-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-submenu-selected > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-submenu-title:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-item:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-item-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-submenu-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-submenu-selected > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-submenu-title:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow::before {
+    background: $primary;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before {
+    background: $primary;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.p-fav-menu {
+  font: $menu-item;
+  color: #fff;
+    display: flex;
+    align-items: flex-start;
+    svg {
+      fill: $primary
+    }
+}
+
+.ant-menu-submenu-expand-icon, .ant-menu-submenu-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0px;
+    color: rgba(0, 0, 0, 0.85);
+    transform: translateY(-50%);
+    transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.ant-layout {
+    background: transparent;
+}
+
+.site-layout .site-layout-background {
+    background: transparent;    
+    padding: 16px 16px 0 !important;
+}
+
+.p-h-gallery {
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  margin: 16px 0 16px -16px;
+  .p-gallery-item {
+    margin-left: 16px;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+.p-content-header {
+  padding-bottom: 16px;
+  .p-content-sub-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 16px 0 16px -16px;
+    .p-header-items {
+      margin-left: 16px;
+      margin-top: 16px;
+      &:first-child{
+        width: -webkit-fill-available;
+        width: available;
+        min-width: 250px;
+        max-width:800px;
+      }
+    }
+  }
+}
+
+.ant-layout-content {
+  margin: 0 16px !important;
+}
+
+.ant-layout-sider-trigger {
+  position: absolute;
+  width: 40px !important;
+  height: 40px;
+  bottom: 16px;
+  right: -20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primary;
+  color: #000;
+}

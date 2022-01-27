@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import PLayoutSide from "./component/sidebar/PLayoutSide";
+import PSideBarResp from "./component/sidebar/PSideBarResp";
+import PDesignSystem from "./view/design-system/PDesignSystem";
+import PLayout from "./view/layout/PLayout";
+import PUi from "./view/ui/PUi";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <PDesignSystem /> */}
+      {/* <PUi /> */}
+      {/* <PLayoutSide /> */}
+      <PLayout />
     </div>
   );
 }

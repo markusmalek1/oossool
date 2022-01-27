@@ -1,0 +1,17 @@
+.p-btn-primary {
+    background-color: $primary;
+    color: #000;
+    border: 1px solid $primary;
+    &:hover {
+        color: $primary;
+        background-color: transparent;
+    }
+}
+
+.p-btn {
+    height: 50px;
+    min-width: 120px;
+    border-radius: 8px;
+    font: $btn;
+    cursor: pointer;
+}

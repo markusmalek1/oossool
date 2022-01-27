@@ -1,0 +1,13 @@
+@import "./colors";
+@import "./typography";
+@import "./font-style";
+
+body {
+    background: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

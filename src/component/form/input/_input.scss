@@ -1,0 +1,28 @@
+.p-input-container {
+    height: 50px;
+    background: $background-overlay;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    input {
+        background: transparent;
+        font: $input-text;
+        color: $text;
+    }
+    .ant-input-prefix {
+        margin-right: 8px;
+        opacity: 0.6;
+    }
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: $background-overlay;
+}
+
+.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused {
+    border-color: $primary !important;
+    box-shadow: 0 0 0 2px rgba(254, 183, 0, 0.2);
+}

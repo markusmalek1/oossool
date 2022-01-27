@@ -1,0 +1,23 @@
+.ant-tree {
+    background: transparent;
+    color: $text;
+    font: $menu-item;
+}
+
+.ant-tree .ant-tree-node-content-wrapper:hover {
+    background-color: transparent;
+    color: $primary;
+}
+
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: transparent;
+    color: $primary;
+}
+
+.ant-tree-switcher_open svg {
+    transform: rotate(-90deg);
+}
+
+.ant-tree-switcher_close svg {
+    transform: rotate(0deg);
+}
